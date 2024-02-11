@@ -19,7 +19,7 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                                'GarageQual': [GarageQual], 'WoodDeckSF': [WoodDeckSF], 'OpenPorchSF': [OpenPorchSF], 'MiscFeature': [MiscFeature]})
 
     #load already saved pipeline and make predictions
-    with open("house_price_api.pkl", "rb") as f:
+    with open("houseprice/house_price_api.pkl", "rb") as f:
         model = pickle.load(f)
         predt = model.predict(input_data) 
     #return prediction 
@@ -49,7 +49,7 @@ CentralAir_input = gr.Number()
 FirstFlrSF_input = gr.Number()
 SecondFlrSF_input = gr.Number()
 GrLivArea_input = gr.Number()
-GarageType_input = gr.Number()
+GarageType_input = gr.Dropdown(choices =['Attached'])
 GarageYrBlt_input = gr.Number()
 GarageCars_input = gr.Number()
 GarageSF_input = gr.Number()

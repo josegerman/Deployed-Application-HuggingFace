@@ -32,7 +32,73 @@ LotFrontageSF_input = gr.number()
 LotAreaSF_input = gr.number()
 BldgType_input = gr.inputs.Drowdown(choices =['Single Family Detached', 'Duplex'])
 HouseStyle_input = gr.inputs.Drowdown(choices =['1 Story', '2 Story']
+OverallQual_input = gr.number()
+YearBuilt_input = gr.number()
+YearRemodAdd_input = gr.number()
+RoofStyle_input = gr.inputs.Drowdown(choices =['Gable', 'Hip']}
+RoofMaterial_input = gr.inputs.Drowdown(choices = ['Standard Composite Shingle'])
+ExterQual_input = gr.number()
+ExterCond_input = gr.number()
+Foundation_input = gr.inputs.Drowdown(choices = ['Slab'])
+BsmtQual_input = gr.number()
+BsmtCond_input = gr.number()
+BsmtFinSF_input = gr.number()
+TotalBsmtSF_input = gr.number()
+Heating_input = gr.inputs.Drowdown(choices = ['GasA'])
+HeatingQC_input = gr.number()
+CentralAir_input = gr.number()
+1stFlrSF_input = gr.number()
+2ndFlrSF_input = gr.number()
+GrLivArea_input = gr.number()
+GarageType_input = gr.number()
+GarageYrBlt_input = gr.number()
+GarageCars_input = gr.number()
+GarageSF_input = gr.number()
+GarageQual_input = gr.number()
+WoodDeckSF_input = gr.number()
+OpenPorchSF_input = gr.number()
+MiscFeature_input = gr.inputs.Drowdown(choices = ['None', 'Shed'])
+
+output = gr.Textbox(label='House Price') 
+
+
+#create the interface component
+app = gr.Interface(fn =make_prediction,inputs =[LotFrontageSF_input,
+                                                LotAreaSF_input,
+                                                BldgType_input,
+                                                HouseStyle_input,
+                                                OverallQual_input,
+                                                YearBuilt_input,
+                                                YearRemodAdd_input,
+                                                RoofStyle_input,
+                                                RoofMaterial_input,
+                                                ExterQual_input,
+                                                ExterCond_input,
+                                                Foundation_input,
+                                                BsmtQual_input,
+                                                BsmtCond_input,
+                                                BsmtFinSF_input,
+                                                TotalBsmtSF_input,
+                                                Heating_input,
+                                                HeatingQC_input,
+                                                CentralAir_input,
+                                                1stFlrSF_input,
+                                                2ndFlrSF_input,
+                                                GrLivArea_input,
+                                                GarageType_input,
+                                                GarageYrBlt_input,
+                                                GarageCars_input,
+                                                GarageSF_input,
+                                                GarageQual_input,
+                                                WoodDeckSF_input,
+                                                OpenPorchSF_input,
+                                                MiscFeature_input],
+                   title ="House Price Generator",
+                   description="Enter the feilds Below and click the submit button to Make Your Prediction",
+                   outputs = output)
+
+
+app.launch(share = True)
 
 
 
-output = gr.Textbox(label='Prediction') 

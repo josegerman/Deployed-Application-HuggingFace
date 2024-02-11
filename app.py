@@ -57,7 +57,6 @@ GarageQual_input = gr.Number()
 WoodDeckSF_input = gr.Number()
 OpenPorchSF_input = gr.Number()
 MiscFeature_input = gr.Dropdown(choices =['None', 'Shed'])
-
 output = gr.Textbox(label='House Price') 
 
 
@@ -94,11 +93,11 @@ app = gr.Interface(fn =make_prediction,inputs =[LotFrontageSF_input,
                                                 OpenPorchSF_input,
                                                 MiscFeature_input],
                    title ="House Price Generator",
-                   description="Enter the feilds Below and click the submit button to Make Your Prediction",
+                       description="Enter the feilds Below and click the submit button to Make Your Prediction",
                    outputs = output)
 
 
-app.launch(share = True)
+app.launch()
 
 
 

@@ -7,14 +7,14 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                    OverallQual, OverallCond, YearBuilt, YearRemodAdd,
                    RoofStyle, RoofMaterial, ExterQual, ExterCond,
                    Foundation, BsmtQual, BsmtCond, BsmtFinSF, TotalBsmtSF,
-                   Heating, HeatingQC, CentralAir, 1stFlrSF, 2ndFlrSF,
+                   Heating, HeatingQC, CentralAir, FirstFlrSF, SecondFlrSF,
                    GrLivArea, GarageType, GarageYrBlt, GarageCars, GarageSF,
                    GarageQual, WoodDeckSF, OpenPorchSF, MiscFeature):
     input_data = pd.DataFrame({'LotFrontageSF': [LotFrontageSF], 'LotAreaSF': [LotAreaSF], 'BldgType': [BldgType], 'HouseStyle': [HouseStyle],
                                'OverallQual': [OverallQual], 'OverallCond': [OverallCond], 'YearBuilt': [YearBuilt], 'YearRemodAdd': [YearRemodAdd],
                                'RoofStyle': [RoofStyle], 'RoofMaterial': [RoofMaterial], 'ExterQual': [ExterQual], 'ExterCond': [ExterCond],
                                'Foundation': [Foundation], 'BsmtQual': [BsmtQual], 'BsmtCond': [BsmtCond], 'BsmtFinSF': [BsmtFinSF], 'TotalBsmtSF': [TotalBsmtSF],
-                               'Heating': [Heating], 'HeatingQC': [HeatingQC], 'CentralAir': [CentralAir], '1stFlrSF': [1stFlrS], '2ndFlrSF': [2ndFlrSF],
+                               'Heating': [Heating], 'HeatingQC': [HeatingQC], 'CentralAir': [CentralAir], 'FirstFlrSF': [FirstFlrSF], 'SecondFlrSF': [SecondFlrSF],
                                'GrLivArea': [GrLivArea], 'GarageType': [GarageType], 'GarageYrBlt': [GarageYrBlt], 'GarageCars': [GarageCars], 'GarageSF': [GarageSF],
                                'GarageQual': [GarageQual], 'WoodDeckSF': [WoodDeckSF], 'OpenPorchSF': [OpenPorchSF], 'MiscFeature': [MiscFeature]})
 
@@ -47,8 +47,8 @@ TotalBsmtSF_input = gr.number()
 Heating_input = gr.inputs.Drowdown(choices = ['GasA'])
 HeatingQC_input = gr.number()
 CentralAir_input = gr.number()
-1stFlrSF_input = gr.number()
-2ndFlrSF_input = gr.number()
+FirstFlrSF_input = gr.number()
+SecondFlrSF_input = gr.number()
 GrLivArea_input = gr.number()
 GarageType_input = gr.number()
 GarageYrBlt_input = gr.number()
@@ -82,8 +82,8 @@ app = gr.Interface(fn =make_prediction,inputs =[LotFrontageSF_input,
                                                 Heating_input,
                                                 HeatingQC_input,
                                                 CentralAir_input,
-                                                1stFlrSF_input,
-                                                2ndFlrSF_input,
+                                                FirstFlrSF_input,
+                                                SecondFlrSF_input,
                                                 GrLivArea_input,
                                                 GarageType_input,
                                                 GarageYrBlt_input,

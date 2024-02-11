@@ -31,11 +31,11 @@ return predt
 LotFrontageSF_input = gr.number()
 LotAreaSF_input = gr.number()
 BldgType_input = gr.inputs.Drowdown(choices =['Single Family Detached', 'Duplex'])
-HouseStyle_input = gr.inputs.Drowdown(choices =['1 Story', '2 Story']
+HouseStyle_input = gr.inputs.Drowdown(choices =['1 Story', '2 Story'])
 OverallQual_input = gr.number()
 YearBuilt_input = gr.number()
 YearRemodAdd_input = gr.number()
-RoofStyle_input = gr.inputs.Drowdown(choices =['Gable', 'Hip']}
+RoofStyle_input = gr.inputs.Drowdown(choices =['Gable', 'Hip'])
 RoofMaterial_input = gr.inputs.Drowdown(choices = ['Standard Composite Shingle'])
 ExterQual_input = gr.number()
 ExterCond_input = gr.number()

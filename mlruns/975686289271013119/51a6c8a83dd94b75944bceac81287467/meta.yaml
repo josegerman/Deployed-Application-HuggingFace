@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/houseprice/mlruns/975686289271013119/51a6c8a83dd94b75944bceac81287467/artifacts
+end_time: 1707674897187
+entry_point_name: ''
+experiment_id: '975686289271013119'
+lifecycle_stage: active
+run_id: 51a6c8a83dd94b75944bceac81287467
+run_name: Session Initialized b499
+run_uuid: 51a6c8a83dd94b75944bceac81287467
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707674869444
+status: 3
+tags: []
+user_id: joseg

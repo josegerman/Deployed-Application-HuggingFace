@@ -99,8 +99,8 @@ app = gr.Interface(fn =make_prediction,inputs =[LotFrontageSF_input,
                        description="Enter the feilds Below and click the submit button to Make Your Prediction",
                    outputs = output)
 
-
-app.launch(share=True)
+app.launch()
+#app.launch(share=True)
 
 
 

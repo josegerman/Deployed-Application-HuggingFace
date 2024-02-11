@@ -18,14 +18,12 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                                'GrLivArea': [GrLivArea], 'GarageType': [GarageType], 'GarageYrBlt': [GarageYrBlt], 'GarageCars': [GarageCars], 'GarageSF': [GarageSF],
                                'GarageQual': [GarageQual], 'WoodDeckSF': [WoodDeckSF], 'OpenPorchSF': [OpenPorchSF], 'MiscFeature': [MiscFeature]})
 
-           
-   
-#load already saved pipeline and make predictions
-with open("house_price_api.pkl", "rb") as f:
-    model = pickle.load(f)
-    predt = model.predict(input_data) 
-#return prediction 
-return predt
+    #load already saved pipeline and make predictions
+    with open("house_price_api.pkl", "rb") as f:
+        model = pickle.load(f)
+        predt = model.predict(input_data) 
+    #return prediction 
+    return predt
 
 #create the input components for gradio
 LotFrontageSF_input = gr.number()

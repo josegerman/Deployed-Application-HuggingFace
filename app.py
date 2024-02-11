@@ -2,6 +2,7 @@ import gradio as gr
 #import sklearn
 import pandas as pd
 import numpy as np
+import pickle
 
 def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                    OverallQual, OverallCond, YearBuilt, YearRemodAdd,

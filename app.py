@@ -1,6 +1,6 @@
 import gradio as gr
-import sklearn
-import pandas pd
+#import sklearn
+import pandas as pd
 import numpy as np
 
 def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,

@@ -12,7 +12,7 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                    Heating, HeatingQC, CentralAir, FirstFlrSF, SecondFlrSF,
                    GrLivArea, GarageType, GarageYrBlt, GarageCars, GarageSF,
                    GarageQual, WoodDeckSF, OpenPorchSF, MiscFeature):
-    input_data = pd.DataFrame({'LotFrontageSF': [LotFrontageSF], 'LotAreaSF': [LotAreaSF], 'BldgType': [BldgType], 'HouseStyle': [HouseStyle],
+                        input_data = pd.DataFrame({'LotFrontageSF': [LotFrontageSF], 'LotAreaSF': [LotAreaSF], 'BldgType': [BldgType], 'HouseStyle': [HouseStyle],
                                'OverallQual': [OverallQual], 'OverallCond': [OverallCond], 'YearBuilt': [YearBuilt], 'YearRemodAdd': [YearRemodAdd],
                                'RoofStyle': [RoofStyle], 'RoofMaterial': [RoofMaterial], 'ExterQual': [ExterQual], 'ExterCond': [ExterCond],
                                'Foundation': [Foundation], 'BsmtQual': [BsmtQual], 'BsmtCond': [BsmtCond], 'BsmtFinSF': [BsmtFinSF], 'TotalBsmtSF': [TotalBsmtSF],

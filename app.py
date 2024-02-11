@@ -99,7 +99,7 @@ app = gr.Interface(fn =make_prediction,inputs =[LotFrontageSF_input,
                    outputs = output)
 
 
-app.launch()
+app.launch(share=True)
 
 
 

@@ -1,0 +1,2 @@
+LotFrontageSF,LotAreaSF,BldgType,HouseStyle,OverallQual,OverallCond,YearBuilt,YearRemodAdd,RoofStyle,RoofMaterial,ExterQual,ExterCond,Foundation,BsmtQual,BsmtCond,BsmtFinSF,TotalBsmtSF,Heating,HeatingQC,CentralAir,FirstFlrSF,SecondFlrSF,GrLivArea,GarageType,GarageYrBlt,GarageCars,GarageSF,GarageQual,WoodDeckSF,OpenPorchSF,MiscFeature,House Price,flag,username,timestamp
+1000,70,Single Family Detached,1 Story,8,8,1989,1999,Gable,Standard Composite Shingle,7,6,Slab,5,5,500,920,GasA,7,1,856,854,1700,Attached,1989,2,600,8,0,30,None,,,,2024-02-11 12:14:16.367617

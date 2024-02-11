@@ -1,1 +1,4 @@
+gradio
 pycaret
+pandas
+numpy

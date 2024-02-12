@@ -12,13 +12,7 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
                    Heating, HeatingQC, CentralAir, FirstFlrSF, SecondFlrSF,
                    GrLivArea, GarageType, GarageYrBlt, GarageCars, GarageSF,
                    GarageQual, WoodDeckSF, OpenPorchSF, MiscFeature):
-    input_data = pd.DataFrame({'LotFrontageSF': [LotFrontageSF], 'LotAreaSF': [LotAreaSF], 'BldgType': [BldgType], 'HouseStyle': [HouseStyle],
-                   'OverallQual': [OverallQual], 'OverallCond': [OverallCond], 'YearBuilt': [YearBuilt], 'YearRemodAdd': [YearRemodAdd],
-                   'RoofStyle': [RoofStyle], 'RoofMaterial': [RoofMaterial], 'ExterQual': [ExterQual], 'ExterCond': [ExterCond],
-                   'Foundation': [Foundation], 'BsmtQual': [BsmtQual], 'BsmtCond': [BsmtCond], 'BsmtFinSF': [BsmtFinSF], 'TotalBsmtSF': [TotalBsmtSF],
-                   'Heating': [Heating], 'HeatingQC': [HeatingQC], 'CentralAir': [CentralAir], 'FirstFlrSF': [FirstFlrSF], 'SecondFlrSF': [SecondFlrSF],
-                   'GrLivArea': [GrLivArea], 'GarageType': [GarageType], 'GarageYrBlt': [GarageYrBlt], 'GarageCars': [GarageCars], 'GarageSF': [GarageSF],
-                   'GarageQual': [GarageQual], 'WoodDeckSF': [WoodDeckSF], 'OpenPorchSF': [OpenPorchSF], 'MiscFeature': [MiscFeature]})
+    input_data = pd.DataFrame( )
 
     #load already saved pipeline and make predictions
     with open("houseprice_best_model.pkl", "rb") as f:

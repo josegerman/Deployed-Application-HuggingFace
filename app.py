@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 import pickle
-import gradio
+import gradio as gr
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV, train_test_split
 from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error

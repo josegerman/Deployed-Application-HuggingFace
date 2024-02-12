@@ -24,10 +24,10 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
 
 #create the input components for gradio
 LotFrontageSF_input = gr.Number(label='Lot Frontage (Squared Feet)',value = 1000)
-LotAreaSF_input = gr.Number(value=70)
-BldgType_input = gr.Dropdown(choices =['Single Family Detached', 'Duplex'], value='Single Family Detached')
-HouseStyle_input = gr.Dropdown(choices =['1 Story', '2 Story'], value='1 Story')
-OverallQual_input = gr.Number(value=8)
+LotAreaSF_input = gr.Number(label='Lot Total Area (Squared Feet',value=70)
+BldgType_input = gr.Dropdown(label='Build Type',choices =['Single Family Detached', 'Duplex'], value='Single Family Detached')
+HouseStyle_input = gr.Dropdown(label='House Style',choices =['1 Story', '2 Story'], value='1 Story')
+OverallQual_input = gr.Number(label='Overall House Quality (0=worse, 10=best)',value=8)
 OverallCond_input = gr.Number(value=8)
 YearBuilt_input = gr.Number(value=1989)
 YearRemodAdd_input = gr.Number(value=1999)

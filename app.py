@@ -42,7 +42,7 @@ BsmtFinSF_input = gr.Number(label='Basement Finished Area (Squared Feed)',value=
 TotalBsmtSF_input = gr.Number(label='Total Basement Area (Squared Feet)',value=920)
 Heating_input = gr.Dropdown(label='Heating Type',choices =['GasA'], value='GasA')
 HeatingQC_input = gr.Number(label='Heating Quality (1 to 10 scale; 10=best)',value=7)
-CentralAir_input = gr.Number(label='Central Air Conditioning',choices =['Yes','No'], value='No')
+CentralAir_input = gr.Dropdown(label='Central Air Conditioning',choices =['Yes','No'], value='No')
 FirstFlrSF_input = gr.Number(label='First Floor Area (Squared Feet)',value=856)
 SecondFlrSF_input = gr.Number(label='Second Floor Area (Square Feet)(If none, enter 0)',value=854)
 GrLivArea_input = gr.Number(label='Great Living Area (Squared Feet)',value=1700)

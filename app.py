@@ -23,7 +23,7 @@ def make_prediction(LotFrontageSF, LotAreaSF, BldgType, HouseStyle,
     #return predt
 
 #create the input components for gradio
-LotFrontageSF_input = gr.Number(value = 1000)
+LotFrontageSF_input = gr.Number(label='Lot Frontage (Squared Feet)',value = 1000)
 LotAreaSF_input = gr.Number(value=70)
 BldgType_input = gr.Dropdown(choices =['Single Family Detached', 'Duplex'], value='Single Family Detached')
 HouseStyle_input = gr.Dropdown(choices =['1 Story', '2 Story'], value='1 Story')

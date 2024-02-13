@@ -76,7 +76,7 @@ def predict_house_price(LotFrontageSF,LotAreaSF,OverallQual,OverallCond,YearBuil
 
     return predict_house_price[0]
 
-#create the input components for gradio
+# Create the app's input components using gradio library
 LotFrontageSF_input = gr.Number(label='Lot Frontage (Squared Feet)',value = 1000)
 LotAreaSF_input = gr.Number(label='Lot Total Area (Squared Feet)',value=70)
 BldgType_input = gr.Dropdown(label='Build Type',choices =['Single Family Detached', 'Duplex'], value='Single Family Detached')
@@ -111,7 +111,7 @@ MiscFeature_input = gr.Dropdown(label='Miscellaneous Feature',choices =['None', 
 output = gr.Textbox(label='Predicted House Price') 
 
 
-#create the interface component
+# Values captured from user interface are passed to prediction function
 app = gr.Interface(fn = predict_house_price,inputs = [LotFrontageSF_input,
                                                 LotAreaSF_input,
                                                 OverallQual_input,
@@ -148,8 +148,11 @@ app = gr.Interface(fn = predict_house_price,inputs = [LotFrontageSF_input,
                        description="Enter House details below and click the submit button to generate house price",
                    outputs = output)
 
+# Launch the app
 app.launch()
-#app.launch(share=True)
+#app.launch(share=True) # used to create a public IP address to access site
+
+
 
 
 

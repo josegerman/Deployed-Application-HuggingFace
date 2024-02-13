@@ -8,11 +8,8 @@ from sklearn.model_selection import RandomizedSearchCV, GridSearchCV, train_test
 from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.preprocessing import LabelEncoder
-import streamlit as st
 import warnings
 warnings.filterwarnings('ignore')
-
-st.title("Predict House Price")
 
 # Load saved model using pickle
 with open('randomforestregressor_model.pkl', 'rb') as file1:
